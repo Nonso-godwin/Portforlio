@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.sideNav{
+    background-color: gray;
+    z-index: 1;
+    width: 30%;
+    display: none;
+    color:white;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    box-shadow: black 1.5px 1.5px 3px 1.5px;
+   text-align: center;
+    
+    
+}
+.main{
+    z-index: 0;
+    position: absolute;
+    top: 20%;
+}
+.hamburger{
+    border:none;
+    background-color: transparent;
+    font-size: 150%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    /* background-color: rgb(164, 160, 160); */
+}
+.sideText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 250%;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+<nav>
+<button class="hamburger" onclick="show()">
+    <h1> &#9776;</h1>
+</button>
+<div style="text-align: center; width: 100%;font-family: Anydore;font-size: 30px;">
+    <h1 >Clone Projects</h1>
+</div>
+
+
+</nav>
+
+<div class="sideNav" id="sideNav">
+    <button style="float: left;font-size: 70%;width: 50px;height: 70px;" onclick="show()">
+        <h1>	&#10005;</h1>
+    </button>
+<br><br><br><br>
+<div class="sideText">
+    <a href="index.html" style="text-decoration: none;"> Home </a>
+    <br>
+    <a href="" style="text-decoration: none;"> Clone </a>
+    <br>
+    <a href="crud.html" style="text-decoration: none;"> CRUD </a>
+   
+
+</div>
+
+
+</div>
+<br><br>
+<div class="main">
+
+    <h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Quae officia impedit facere nesciunt provident aperiam alias 
+        vitae modi ut fuga corrupti architecto, magnam velit quo eos.
+         Porro asperiores mollitia minus?
+      </h2>
+      
+
+</div>
+
+    </div>
+</body>
+
+<script>
+function show (){
+    if(document.getElementById("sideNav").style.display == "block" ){
+        document.getElementById("sideNav").style.display = "none";
+    }
+    else{
+        document.getElementById("sideNav").style.display = "block";
+    }
+}
+
+
+
+
+
+
+
+
+</script>
+</html>

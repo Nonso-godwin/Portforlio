@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <style>
+
+body{
+    width: 100%;
+}
+#myVideo{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:0;
+}
+
+.text-overlay{
+          color: white;
+          /* font-size: 70px; */
+          text-align: center;
+          z-index: 1;
+          width: 100%;
+          font-family: poppins;
+      
+          text-shadow: 2px 2px 0 black, -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black;
+        }
+   img{
+    /* width: 5%; */
+    z-index: 2;
+    float: left;
+    transform: translate(50%, 30%);
+}
+
+.contact{
+    float :right;
+    z-index:2;
+    transform: translate(-30%, 10%);
+    color: white;
+    /* float: right; */
+
+}
+
+@media (max-width:768px){
+    body{
+        /* display: none; */
+        width: 100%;
+    }
+}
+img{
+    width: 7%;
+}
+
+
+
+    </style>
+</head>
+<body >
+  <div class="row">
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="abstract blue binary code background futuristic Stock Footage Video(MP4).mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+    </div>
+    
+      <div class="hello1"></div>
+      <img src="large-b389_oWfK-transformed (2).png" alt="" class="img-fluid mt-5 d-none d-md-block d-lg-inline-block">
+      <h3 class="contact d-lg-none text-end mt-5">
+        Contact me &phone;
+      </h3>
+    </div>
+    <br><br><br><br><br>
+    <!-- <div class="col-12 col-lg-6 order-lg-1"> -->
+      <div style="display: flex;flex-direction: row;justify-content: space-evenly;" class="hello2">
+        <div class="text-overlay">
+            <h1 style="font-size: 70px;">Hi, I'm Godwin</h1>
+            <h4 style="font-style: italic;text-align: center;">I am a Full stack website developer </h4>
+            <a href="home-page.html" style="font-size: 20px;text-decoration: none;color:white;" >See my projects &#8594;</a>  
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
+<script>
+    var video = document.getElementById("myVideo")
+    var btn = document.getElementById("myBtn")
+
+    function myFunction() {
+      if (video.paused) {
+        video.play()
+        btn.innerHTML = "Pause"
+      } else {
+        video.pause()
+        btn.innerHTML = "Play"
+      }
+    }
+</script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <script src="js/jquery.js"></script> -->
+
+</html>
